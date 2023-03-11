@@ -1,0 +1,42 @@
+{
+  "name": "ioc-typescript",
+  "version": "1.0.0",
+  "description": "ioc-typescript",
+  "main": "index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx ts-node ./test/test-2/index.ts",
+     "build":"set NODE_ENV=production&&tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1119879311/ioc-typescript.git"
+  },
+  "keywords": [
+    "ioc",
+    "ioc-typescript",
+    "ts-ioc",
+    "ioc-ts",
+    "typescript-ioc",
+    "nestjs",
+    "inversify"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1119879311/ioc-typescript/issues"
+  },
+  "homepage": "https://github.com/1119879311/ioc-typescript#readme",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^12.20.55",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.4.5"
+  }
+}
