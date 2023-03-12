@@ -100,7 +100,7 @@ insB.getB() ;
 
 #### 示例三： 循环依赖forwardRef
 - A类实例化的时候依赖B类 ,B类的实例化的时候依赖A类 ,这样就造成了依赖循环
--  主意： 不能 A 类的a 方法里面调用B 类的 a 方法，然后B 类的 a 方法 又调用了A 类的a 方法 ，这种就是死循环，无解
+-  注意： 不能 A 类的a 方法里面调用B 类的 a 方法，然后B 类的 a 方法 又调用了A 类的a 方法 ，这种就是死循环，无解
 
 ------------
 >  src/depA.ts
@@ -285,6 +285,10 @@ export class C{
 
 ### APi 参数说明
 一、  提供两个容器,ContainerBase 与 Container ，Container 是增强版继承与ContainerBase， 与@Module 结合使用
+
+------------
+
+
 1、ContainerBase：
 构造函数参数：无
 实例方法有：
@@ -303,7 +307,10 @@ export class C{
 2、Container : 
  构造函数参数： 接受一个参数 使用@module 注入的服务
  实例方法: 继承ContainerBase
+ 
 二、 提供三个注解方法 @Inject、@Injectable 、@Module
+
+------------
 
 | 装饰器方法 | 描述                |
 | ------------- | ------------------------------ |
@@ -312,4 +319,8 @@ export class C{
 | `@Module`   | 标志可注入依赖的模块，接受一个参数对象 {providers，controllers，imports}     |
 
 三、forwardRef：标志这是一个依赖循环的服务，接受一个函数，返回 一个provider
+
+------------
 四、InjectToken：是一个构造类，用于生成一个 可以注入的provider服务
+
+------------

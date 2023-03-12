@@ -1,6 +1,6 @@
 {
   "name": "ioc-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ioc-typescript",
   "main": "index.ts",
   "directories": {
