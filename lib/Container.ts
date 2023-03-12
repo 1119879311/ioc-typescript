@@ -47,12 +47,14 @@ export class ContainerBase{
     }else{ 
        this.bind({ provide: provider, useClass: provider });
     }
+    return this
   }
   // 批量添加 注入
   public addProviders<T=any>(providers:Array<Type<T> | Provider<T> | IforwardRef<T>> ){
     if(Array.isArray(providers)){
       providers.forEach( provider=> this.addProvider(provider))
     }
+    return this
   }
   // 收集 循环注入的处理
   /**
@@ -108,6 +110,7 @@ export class ContainerBase{
     
       this.providers.set(provider.provide,provider)
     }
+    return this
   }
   
 
@@ -129,6 +132,7 @@ export class ContainerBase{
     this.LoadForwardProviders()
     this.providers.clear()
     this.instancesforwardMap.clear()
+    return this
   }
     // 加载 注入,开始实例化
   protected loadProviders() {

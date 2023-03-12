@@ -8,8 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx ts-node ./test/test-2/index.ts",
-     "build":"set NODE_ENV=production&&tsc"
+    "test": "npx ts-node ./test/index.ts",
+    "build":"set NODE_ENV=production&&tsc"
   },
   "repository": {
     "type": "git",
