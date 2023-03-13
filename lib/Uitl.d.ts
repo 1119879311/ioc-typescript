@@ -1,0 +1,11 @@
+import { Token, Type } from "./Token";
+export declare function isController(target: any): boolean;
+export declare function isModule(target: any): boolean;
+export declare function isInjectable(target: any): boolean;
+export declare function setInjectable(target: any): void;
+export declare function setController(target: any): void;
+export declare function getInjectConstructParams<T>(target: Token<T>): Array<Type<T> | undefined>;
+export declare function isString(value: unknown): value is string;
+export declare function isFun(value: unknown): value is Function;
+export declare function isObj(value: unknown): value is Object;
+export declare function isNotBaseType(name: string): boolean;

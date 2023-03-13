@@ -1,5 +1,5 @@
 
-import {ContainerBase,Injectable} from "../index"
+import {ContainerBase,Injectable} from "../src"
 // import {ContainerBase,Injectable} from "ioc-typescript"
 
 

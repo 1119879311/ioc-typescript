@@ -1,15 +1,15 @@
 {
   "name": "ioc-typescript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ioc-typescript",
-  "main": "index.ts",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
   "scripts": {
     "test": "npx ts-node ./test/index.ts",
-    "build":"set NODE_ENV=production&&tsc"
+    "build": "set NODE_ENV=production&&tsc --build tsconfig.pro.json"
   },
   "repository": {
     "type": "git",

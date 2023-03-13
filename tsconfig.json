@@ -5,24 +5,17 @@
     "allowSyntheticDefaultImports": true,
     "module": "commonjs",
     "target": "es2017",
+    "declaration": true,
     "esModuleInterop": true,
     "noImplicitAny": true,
     "moduleResolution": "node",
     "allowJs": true,
-    "sourceMap": false,     
-    "outDir": "dist",  // TS文件编译后会放入到此文件夹内
+    "sourceMap": false,   
+    "outDir": "./lib", 
     "baseUrl": ".",
-    "paths": {
-      "*": [
-        "node_modules/*",
-        "lib/types/*",
-        "test/types/*"
-
-      ]
-    }
   },
   "include": [
-    "lib/**/*",
-    "test/**/*",
+    "src/**/*",
+    "test/**/*"
   ]
 }

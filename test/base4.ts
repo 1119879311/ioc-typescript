@@ -1,4 +1,4 @@
-import {Inject,InjectToken,Injectable,forwardRef,Container,Module} from "../index"
+import {Inject,InjectToken,Injectable,forwardRef,Container,Module} from "../src"
 // import {Inject,InjectToken,Injectable,forwardRef,Container,Module} from "ioc-typescript"
 
 

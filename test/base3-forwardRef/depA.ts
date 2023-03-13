@@ -1,4 +1,4 @@
-import { Injectable ,Inject,forwardRef} from "../../index";
+import { Injectable ,Inject,forwardRef} from "../../src";
 
 import { B } from "./depB";
 

@@ -1,5 +1,5 @@
 
-import {Container,forwardRef, Module} from "../../index"
+import {Container,forwardRef, Module} from "../../src"
 // import {Container,Injectable, Module} from "ioc-typescript"
 import {A} from "./depA"
 import {B} from "./depB"
